@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Guessing Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.css">
+
+    <!-- Bootstrap and CSS here-->
+    <style>
+        body {
+            background-image: linear-gradient(to right top, #313d5a, #466885, #5f97ae, #83c7d2, #b1f8f2);
+            color: white;
+            height: 96vh;
+            width: 100vw;
+        }
+      .center {
+        text-align: center;
+      }
+      ul {
+          list-style: none;
+          padding: 0;
+      }
+      a {
+          color: #ffa726;
+      }
+      img {
+          display: inline;
+          width: 200px;
+          height: 100px;
+      }
+      #main {
+          margin-top: 7%;
+      }
+      #input-parent input {
+          width: 5vw;
+      }
+
+      #guesses ul li {
+          display: inline-block;
+          border: 1px solid white;
+          border-radius: 5px;
+          height: 50px;
+          width: 50px;
+          text-align: center;
+      }
+      #footer {
+          width: 100%;
+        
+          position: fixed;
+          bottom: 0;
+          left: 20px;
+      }
+    </style>
+
+  </head>
+  <body>
+
+      <div id='app' class="row">
+
+        <div id='headers'>
+            <h1 class="center-align">Guessing Game</h1>
+            <h3 class="center-align">Pick a number between 1-100</h3>
+        </div>
+
+        <div id='main' class="center-align">
+          <div id='input-parent'>
+            <input placeholder="1-100" type="number" class="validate">
+            <button class="btn-floating btn-large waves-effect waves-light orange lighten-1">Go!</button>
+          </div>
+
+          <div id='guesses'>
+            <ul>
+                <li class="valign-wrapper">
+                    <p>45</p>
+                </li>
+                <li class="valign-wrapper">
+                    <p>45</p>
+                </li>
+                <li class="valign-wrapper">
+                    <p>45</p>
+                </li>
+                <li class="valign-wrapper">
+                    <p>45</p>
+                </li>
+                <li class="valign-wrapper">
+                    <p>45</p>
+                </li>
+            </ul>
+          </div>
+
+          <div id="menu-btns">
+            <button class="waves-effect waves-light btn blue lighten-2">Reset</button>
+            <button class="waves-effect waves-light btn blue lighten-2">Hint</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="footer">
+            <p>project by <a target="_blank" href="https://github.com/swellander">sam wellander</a></p>
+      </div>
+
+    <!-- <div id='footer'>
+        <div>
+          <div class=''>
+            <img src='fa-logo@2x.png'></img>
+          </div>
+
+          <div class=''>
+            <h4>Project by Sam Wellander</h4>
+          </div>
+
+          <div class=''>
+            <img src='grace_hopper_academy.png'></img>
+          </div>
+
+
+        </div>
+    </div> -->
+
+  </body>
+</html>
