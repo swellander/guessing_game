@@ -15,6 +15,9 @@
       .center {
         text-align: center;
       }
+      h1 {
+          margin-bottom: 8vh;
+      }
       ul {
           list-style: none;
           padding: 0;
@@ -57,39 +60,39 @@
       <div id='app' class="row">
 
         <div id='headers'>
-            <h1 class="center-align">Guessing Game</h1>
-            <h3 class="center-align">Pick a number between 1-100</h3>
+            <h1 class="center-align tooltipped" margin=33 data-position="bottom" data-tooltip="The Great Guessing Game">G | G | G</h1>
+            <h3 class="center-align">Pick a number between 1 and 100</h3>
         </div>
 
         <div id='main' class="center-align">
           <div id='input-parent'>
-            <input placeholder="1-100" type="number" class="validate">
-            <button class="btn-floating btn-large waves-effect waves-light orange lighten-1">Go!</button>
+            <input id="player-input" type="number" class="validate">
+            <button id="submit" class="btn-floating btn-large waves-effect waves-light orange lighten-1">Go!</button>
           </div>
 
           <div id='guesses'>
             <ul>
                 <li class="valign-wrapper">
-                    <p>45</p>
+                    <p>-</p>
                 </li>
                 <li class="valign-wrapper">
-                    <p>45</p>
+                    <p>-</p>
                 </li>
                 <li class="valign-wrapper">
-                    <p>45</p>
+                    <p>-</p>
                 </li>
                 <li class="valign-wrapper">
-                    <p>45</p>
+                    <p>-</p>
                 </li>
                 <li class="valign-wrapper">
-                    <p>45</p>
+                    <p>-</p>
                 </li>
             </ul>
           </div>
 
           <div id="menu-btns">
-            <button class="waves-effect waves-light btn blue lighten-2">Reset</button>
-            <button class="waves-effect waves-light btn blue lighten-2">Hint</button>
+            <button id="reset" class="waves-effect waves-light btn blue lighten-2">Reset</button>
+            <button id="hint" class="waves-effect waves-light btn blue lighten-2">Hint</button>
           </div>
         </div>
       </div>
@@ -115,6 +118,9 @@
 
         </div>
     </div> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="GuessingGame.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 
   </body>
 </html>
